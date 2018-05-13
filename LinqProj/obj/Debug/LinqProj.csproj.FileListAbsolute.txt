@@ -1,0 +1,6 @@
+/home/ivan/RiderProjects/LinqProj/LinqProj/bin/Debug/LinqProj.exe
+/home/ivan/RiderProjects/LinqProj/LinqProj/bin/Debug/LinqProj.pdb
+/home/ivan/RiderProjects/LinqProj/LinqProj/obj/Debug/LinqProj.csprojResolveAssemblyReference.cache
+/home/ivan/RiderProjects/LinqProj/LinqProj/obj/Debug/LinqProj.csproj.CoreCompileInputs.cache
+/home/ivan/RiderProjects/LinqProj/LinqProj/obj/Debug/LinqProj.exe
+/home/ivan/RiderProjects/LinqProj/LinqProj/obj/Debug/LinqProj.pdb
