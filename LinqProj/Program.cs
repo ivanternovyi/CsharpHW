@@ -50,58 +50,58 @@ namespace LinqProj
 
         private static void LinqBegin16()
         {
-            var arr = ConvertToInts(FileManager.Parse("../16.txt"));
+            var arr = ConvertToInts(FileManager.Parse("../data/16.txt"));
             var res = arr.Where(i => i > 0);
-            FileManager.SaveToFile("../16res.txt", res);
+            FileManager.SaveToFile("../result/16res.txt", res);
         }
         
         private static void LinqBegin17()
         {
-            var arr = ConvertToInts(FileManager.Parse("../17.txt"));
+            var arr = ConvertToInts(FileManager.Parse("../data/17.txt"));
             var res = arr.Where(i => i % 2 != 0).Distinct();
-            FileManager.SaveToFile("../17res.txt", res);
+            FileManager.SaveToFile("../result/17res.txt", res);
         }
         
         private static void LinqBegin18()
         {
-            var arr = ConvertToInts(FileManager.Parse("../18.txt")); 
+            var arr = ConvertToInts(FileManager.Parse("../data/18.txt")); 
             var res = arr.Where(i => (i > 0 && (i.ToString().Length == 2 && i.ToString()[0] != '0'))).OrderBy(i => i);
-            FileManager.SaveToFile("../18res.txt", res);
+            FileManager.SaveToFile("../result/18res.txt", res);
         }
         
         private static void LinqBegin19()
         {
-            var arr = FileManager.Parse("../19.txt").Split(','); 
+            var arr = FileManager.Parse("../data/19.txt").Split(','); 
             var res = arr.OrderBy(i => i.Length).ThenBy(i => i);
-            FileManager.SaveToFile("../19res.txt", res);
+            FileManager.SaveToFile("../result/19res.txt", res);
         }
 
         private static void LinqBegin20()
         {
-            var arr = ConvertToInts(FileManager.Parse("../20.txt"));
+            var arr = ConvertToInts(FileManager.Parse("../data/20.txt"));
             var d = 3;
             var res = arr.SkipWhile(i => i <= d).Where(i => (i > 0 && i % 2 != 0)).Reverse();
-            FileManager.SaveToFile("../20res.txt", res);
+            FileManager.SaveToFile("../result/20res.txt", res);
         }
 
         private static void LinqBegin44()
         {
-            var A = ConvertToInts(FileManager.Parse("../44_1.txt"));
-            var B = ConvertToInts(FileManager.Parse("../44_2.txt"));
+            var A = ConvertToInts(FileManager.Parse("../data/44_1.txt"));
+            var B = ConvertToInts(FileManager.Parse("../data/44_2.txt"));
             var K1 = 3;
             var K2 = 5;
             var res = A.Where(i => i > K1).Concat(B.Where(i => i < K2)).OrderBy(i => i);
-            FileManager.SaveToFile("../44res.txt", res);
+            FileManager.SaveToFile("../result/44res.txt", res);
         }
 
         private static void LinqBegin45()
         {
-            var A = FileManager.Parse("../45_1.txt").Split(',');
-            var B = FileManager.Parse("../45_2.txt").Split(',');
+            var A = FileManager.Parse("../data/45_1.txt").Split(',');
+            var B = FileManager.Parse("../data/45_2.txt").Split(',');
             var L1 = 5;
             var L2 = 4;
             var res = A.Where(i => i.Length == L1).Concat(B.Where(i => i.Length == L2)).OrderByDescending(i => i);
-            FileManager.SaveToFile("../45res.txt", res);
+            FileManager.SaveToFile("../result/45res.txt", res);
         }
     }
 }
