@@ -4,6 +4,8 @@
     <e p="$USER_HOME$/.Rider2017.3/system/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_LinqProj.1900342906.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="LinqProj" t="IncludeRecursive">
+        <e p="16.txt" t="Include" />
+        <e p="FileManager.cs" t="Include" />
         <e p="LinqProj.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
