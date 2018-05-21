@@ -4,3 +4,9 @@
 /home/ivan/RiderProjects/LinqProj/LinqProj/obj/Debug/LinqProj.csproj.CoreCompileInputs.cache
 /home/ivan/RiderProjects/LinqProj/LinqProj/obj/Debug/LinqProj.exe
 /home/ivan/RiderProjects/LinqProj/LinqProj/obj/Debug/LinqProj.pdb
+/home/ivan/Desktop/LINQ/CsharpHW/LinqProj/bin/Debug/LinqProj.exe
+/home/ivan/Desktop/LINQ/CsharpHW/LinqProj/bin/Debug/LinqProj.pdb
+/home/ivan/Desktop/LINQ/CsharpHW/LinqProj/obj/Debug/LinqProj.csprojResolveAssemblyReference.cache
+/home/ivan/Desktop/LINQ/CsharpHW/LinqProj/obj/Debug/LinqProj.csproj.CoreCompileInputs.cache
+/home/ivan/Desktop/LINQ/CsharpHW/LinqProj/obj/Debug/LinqProj.exe
+/home/ivan/Desktop/LINQ/CsharpHW/LinqProj/obj/Debug/LinqProj.pdb
