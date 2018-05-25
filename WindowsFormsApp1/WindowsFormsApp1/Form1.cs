@@ -18,6 +18,7 @@ namespace WindowsFormsApp1
         private int x2 = -1;
         private int y2 = -1;
         private Pen pen;
+        private bool isLinesSaved = false;
 
         public Form1()
         {
@@ -43,6 +44,14 @@ namespace WindowsFormsApp1
 
         private void OnFileNewClicked(object sender, EventArgs e)
         {
+            if (!isLinesSaved)
+            {
+                var resultAnswer = MessageBox.Show("Save graphic?", "Graphic Menu", MessageBoxButtons.YesNo);
+                if (resultAnswer == DialogResult.Yes)
+                {
+                    OnFileSaveClicked(sender, e);
+                }
+            }
             // Clearing the drawings
             panel1.Invalidate();
         }
@@ -79,6 +88,7 @@ namespace WindowsFormsApp1
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 SerializationManager.Serialize(saveFileDialog.FileName, arrLines);
+                isLinesSaved = true;
             }
         }
 
