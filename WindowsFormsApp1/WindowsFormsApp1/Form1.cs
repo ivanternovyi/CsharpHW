@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
                 foreach (var line in arrLines)
                 {
                     // TODO: Fix open saved lines with specific color
-                    //pen.Color = line.Color;
+                    pen.Color = ColorTranslator.FromHtml(line.HtmlColor);
                     graphics.DrawLine(pen, new Point(line.CoordX, line.CoordY),
                                         new Point(line.CoordX2, line.CoordY2));
                 }
@@ -116,7 +116,7 @@ namespace WindowsFormsApp1
             x2 = e.X;
             y2 = e.Y;
             graphics.DrawLine(pen, new Point(x, y), new Point(x2, y2));
-            arrLines.Add(new Line(x, y, x2, y2, pen.Color));
+            arrLines.Add(new Line(x, y, x2, y2, ColorTranslator.ToHtml(pen.Color)));
             x2 = -1;
             y2 = -1;
             panel1.Cursor = Cursors.Default;
