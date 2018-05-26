@@ -29,17 +29,6 @@ namespace WindowsFormsApp1
             pen.StartCap = pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
         }
 
-        private void Draw(object sender, PaintEventArgs e)
-        {
-
-           // e.Graphics.FillEllipse(Brushes.Olive, 10, 10, 100, 100);
-        }
-
-        private void TestColor()
-        {
-    
-        }
-
         private List<Line> arrLines = new List<Line>();
 
         private void OnFileNewClicked(object sender, EventArgs e)
