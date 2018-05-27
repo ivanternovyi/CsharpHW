@@ -108,8 +108,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(691, 357);
             this.panel1.TabIndex = 1;
+            this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.OnCanvasDragDrop);
+            this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.OnCanvasDragEnter);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnCanvasMouseDown);
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OnCanvasMouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnCanvasMouseUp);
             // 
             // panel2
@@ -137,7 +138,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pictureBox4.BackColor = System.Drawing.Color.SkyBlue;
             this.pictureBox4.Location = new System.Drawing.Point(39, 3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(19, 18);
